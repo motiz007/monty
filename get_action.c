@@ -17,10 +17,10 @@ void get_action(stack_t **stack, unsigned int line_number)
 		{"pop", _pop},
 		{"swap", _swap},
 		{"add", _add},
-		{"sub", _add},
-		{"div", _add},
-		{"mul", _add},
-		{"mod", _add},
+		{"sub", _sub},
+		{"div", _div},
+		{"mul", _mul},
+		{"mod", _mod},
 		{NULL, NULL}
 	};
 
