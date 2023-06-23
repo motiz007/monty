@@ -39,12 +39,11 @@ int main(int argc, char **argv)
 		if (rVal == -1)
 			break;
 		line_number++;
+		if (*str == '\n')
+			continue;
 		data[0] = strtok(str, " \n");
 		if (data[0] == NULL)
-		{
-			free(str);
 			continue;
-		}
 		else if (strcmp(data[0], "push") == 0)
 			data[1] = strtok(NULL, " \n");
 
