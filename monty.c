@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 			continue;
 		data[0] = strtok(str, " \n");
 		if (data[0] == NULL)
-			continue;
+			_nop(&head, line_number);
 		else if (strcmp(data[0], "push") == 0)
 			data[1] = strtok(NULL, " \n");
 
